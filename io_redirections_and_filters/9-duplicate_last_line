@@ -1,2 +1,2 @@
 #!/bin/bash
-sed p iacta >> iacta
+cat iacta | tail --lines=1 >> iacta
