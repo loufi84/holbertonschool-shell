@@ -1,2 +1,2 @@
 #!/bin/bash
-count=1; while read -r line; do [ $((count % 2)) -ne 0 ] && echo "$line"; count=$((count + 1)); done
+nl -ba | grep '^[ \t]*[13579]' | cut -f2- | xargs -I {} echo {}
