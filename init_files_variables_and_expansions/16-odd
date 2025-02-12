@@ -1,2 +1,2 @@
 #!/bin/bash
-nl -ba | grep '^[ \t]*[13579]' | cut -f2- | xargs -I {} echo {}
+nl -ba | grep '^[[:space:]]*[13579][[:space:]].*$' | cut -f2-
