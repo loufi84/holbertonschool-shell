@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -P '^[^\t]¨*$' | cat -n | grep '^[[:space:]]*[0-9]*[13579][[:space:]]' | cut -d$'\t' -f2-
+grep -v -e $'\t' | cat -n | grep '^[[:space:]]*[0-9]*[13579][[:space:]]' | cut -d$'\t' -f2-
